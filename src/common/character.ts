@@ -6,6 +6,7 @@ interface Character {
   name: string;
   nametag: string;
   side: CourtroomSide;
+  useFemaleBlip?: true;
 }
 
 export default Character;

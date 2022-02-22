@@ -7,6 +7,7 @@ const Characters: Character[] = [
     nametag: 'Mia',
     side: CourtroomSide.DEFENSE,
     identifier: 'mia',
+    useFemaleBlip: true,
   },
   {
     name: 'Phoenix Wright',
@@ -37,6 +38,7 @@ const Characters: Character[] = [
     nametag: 'Franziska',
     side: CourtroomSide.PROSECUTION,
     identifier: 'franziska',
+    useFemaleBlip: true,
   },
   {
     name: 'Godot',
