@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Characters from './characters';
 import CharacterButton from './components/character-button';
@@ -7,6 +7,11 @@ function App() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
   const [modalIsDisplayed, setModalDisplay] = useState(false);
   const [statement, updateStatement] = useState('');
+
+  function updateTextareaContent(e: React.ChangeEvent<HTMLTextAreaElement>) {
+    const { value } = e.target;
+    updateStatement(value);
+  };
 
   return (
     <div className="App">
@@ -17,7 +22,7 @@ function App() {
         then press the Objection! button!
       </p>
 
-      <div style={{ width: 570, margin: 'auto' }}>
+      <div style={{ width: 570 }}>
         {Characters.map(char => (
           <CharacterButton
             character={char}
@@ -29,10 +34,7 @@ function App() {
 
         <textarea
           value={statement}
-          onChange={(e) => {
-            const { value } = e.target;
-            updateStatement(value);
-          }}
+          onChange={updateTextareaContent}
         />
       </div>
     </div>

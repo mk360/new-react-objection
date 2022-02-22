@@ -1,9 +1,8 @@
 import Character from "../../common/character";
 
-interface SceneSettings {
+interface SceneProps {
   dialogue: string;
   character: Character;
-  modern: boolean;
 }
 
-export default SceneSettings;
+export default SceneProps;

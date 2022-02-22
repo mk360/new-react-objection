@@ -5,11 +5,13 @@ function loadCharacterAssets(character: Character) {
   const silentGif: string = require(`../assets/animations/silent/${character.identifier}.gif`);
 
   const blip = new Audio(`../assets/blips/${character.useFemaleBlip ? 'female' : 'male'}.ogg`);
+  const objection = new Audio(`../assets/objections/${character.identifier}.ogg`);
 
   return {
     speakingGif,
     silentGif,
     blip,
+    objection,
   };
 };
 
