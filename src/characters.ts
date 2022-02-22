@@ -3,28 +3,28 @@ import CourtroomSide from "./common/courtroom-side";
 
 const Characters: Character[] = [
   {
-    name: 'Phoenix Wright',
-    nametag: 'Phoenix',
-    side: CourtroomSide.DEFENSE,
-    identifier: 'phoenix',
-  },
-  {
     name: 'Mia Fey',
     nametag: 'Mia',
     side: CourtroomSide.DEFENSE,
     identifier: 'mia',
   },
   {
+    name: 'Phoenix Wright',
+    nametag: 'Phoenix',
+    side: CourtroomSide.DEFENSE,
+    identifier: 'phoenix',
+  },
+  {
+    name: 'Winston Payne - AA1',
+    nametag: 'Payne',
+    side: CourtroomSide.PROSECUTION,
+    identifier: 'payne1',
+  },
+  {
     name: 'Miles Edgeworth',
     nametag: 'Edgeworth',
     side: CourtroomSide.PROSECUTION,
     identifier: 'edgeworth',
-  },
-  {
-    name: 'Young Miles Edgeworth',
-    nametag: 'Edgeworth',
-    side: CourtroomSide.PROSECUTION,
-    identifier: 'y_edgeworth',
   },
   {
     name: 'Manfred von Karma',
@@ -37,6 +37,24 @@ const Characters: Character[] = [
     nametag: 'Franziska',
     side: CourtroomSide.PROSECUTION,
     identifier: 'franziska',
+  },
+  {
+    name: 'Godot',
+    nametag: 'Godot',
+    side: CourtroomSide.PROSECUTION,
+    identifier: 'godot',
+  },
+  {
+    name: 'Winston Payne - AA3',
+    nametag: 'Payne',
+    side: CourtroomSide.PROSECUTION,
+    identifier: 'payne2'
+  },
+  {
+    name: 'Young Miles Edgeworth',
+    nametag: 'Edgeworth',
+    side: CourtroomSide.PROSECUTION,
+    identifier: 'y_edgeworth',
   },
   {
     name: 'Apollo Justice',
@@ -53,37 +71,19 @@ const Characters: Character[] = [
     identifier: 'klavier',
   },
   {
+    name: 'Winston Payne - AA4',
+    nametag: 'Payne',
+    side: CourtroomSide.PROSECUTION,
+    modern: true,
+    identifier: 'payne3',
+  },
+  {
     name: 'Young Klavier Gavin',
     nametag: 'Klavier',
     side: CourtroomSide.PROSECUTION,
     modern: true,
     identifier: 'y_klavier',
   },
-  {
-    name: 'Godot',
-    nametag: 'Godot',
-    side: CourtroomSide.PROSECUTION,
-    identifier: 'godot',
-  },
-  {
-    name: 'Winston Payne - AA1',
-    nametag: 'Payne',
-    side: CourtroomSide.PROSECUTION,
-    identifier: 'payne1',
-  },
-  {
-    name: 'Winston Payne - AA3',
-    nametag: 'Payne',
-    side: CourtroomSide.PROSECUTION,
-    identifier: 'payne2'
-  },
-  {
-    name: 'Winston Payne - AA4',
-    nametag: 'Payne',
-    side: CourtroomSide.PROSECUTION,
-    modern: true,
-    identifier: 'payne3',
-  }
 ];
 
 export default Characters;
