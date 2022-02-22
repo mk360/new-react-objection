@@ -1,10 +1,9 @@
 import Character from "../../common/character";
-import CourtroomSide from "../../common/courtroom-side";
 
 interface SceneSettings {
   dialogue: string;
-  side: CourtroomSide;
   character: Character;
+  modern: boolean;
 }
 
 export default SceneSettings;

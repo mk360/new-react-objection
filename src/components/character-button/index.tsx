@@ -13,7 +13,7 @@ const CharacterButton = (props: CharacterButtonProps) => {
   }
 
   const clickHandler = () => {
-    onSelection(character);
+    onSelection(character.identifier);
   };
 
   return (
@@ -21,7 +21,7 @@ const CharacterButton = (props: CharacterButtonProps) => {
       className={`${character.name} ${classes.join('-')} ${selectionClass}`}
       onClick={clickHandler}
     >
-      {character.name} {/* until i somehow style it better */}
+      <img src={require(`../../assets/profiles/${character.identifier}.png`)} />
     </button>
   );
 };
