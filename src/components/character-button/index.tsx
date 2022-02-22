@@ -18,11 +18,15 @@ const CharacterButton = (props: CharacterButtonProps) => {
 
   return (
     <button
-      className={`${character.name} ${classes.join('-')} ${selectionClass}`}
+      className={`${character.identifier} ${classes.join('-')} ${selectionClass}`}
       onClick={clickHandler}
-    >
-      <img src={require(`../../assets/profiles/${character.identifier}.png`)} />
-    </button>
+      style={{
+        backgroundImage: `url(${require(`../../assets/profiles/${character.identifier}.png`)}`,
+        width: 74,
+        backgroundRepeat: 'no-repeat',
+        height: 74,
+      }}
+    />
   );
 };
 
