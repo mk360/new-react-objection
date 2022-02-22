@@ -17,14 +17,24 @@ function App() {
         then press the Objection! button!
       </p>
 
-      {Characters.map(char => (
-        <CharacterButton
-          character={char}
-          selected={char.identifier === selectedCharacter}
-          onSelection={setSelectedCharacter}
-          key={char.identifier}
+      <div style={{ width: 570, margin: 'auto' }}>
+        {Characters.map(char => (
+          <CharacterButton
+            character={char}
+            selected={char.identifier === selectedCharacter}
+            onSelection={setSelectedCharacter}
+            key={char.identifier}
+          />
+        ))}
+
+        <textarea
+          value={statement}
+          onChange={(e) => {
+            const { value } = e.target;
+            updateStatement(value);
+          }}
         />
-      ))}
+      </div>
     </div>
   );
 }

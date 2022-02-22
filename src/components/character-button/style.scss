@@ -1,6 +1,8 @@
 $radius: 10px;
 
 .character-button {
+  background-color: #787878;
+
   &-top {
     &-right {
       border-radius: 0 $radius 0 0;
