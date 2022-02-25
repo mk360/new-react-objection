@@ -1,6 +1,6 @@
 enum CourtroomSide {
-  DEFENSE,
-  PROSECUTION,
+  DEFENSE = 'defense',
+  PROSECUTION = 'prosecution',
 }
 
 export default CourtroomSide;
