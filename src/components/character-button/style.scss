@@ -1,8 +1,6 @@
 $radius: 10px;
 
 .character-button {
-  background-color: #787878;
-
   &-top {
     &-right {
       border-radius: 0 $radius 0 0;
@@ -22,4 +20,8 @@ $radius: 10px;
       border-radius: 0 0 0 $radius;
     }
   }
+}
+
+.selected {
+  border: 2px solid blue;
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Characters from './characters';
 import CharacterButton from './components/character-button';
+import Scene from './components/scene';
 
 function App() {
   const [selectedCharacter, setSelectedCharacter] = useState('');
@@ -36,7 +37,12 @@ function App() {
           value={statement}
           onChange={updateTextareaContent}
         />
+
+        <button onClick={() => {
+          setModalDisplay(true);
+        }}>display modal</button>
       </div>
+      {modalIsDisplayed && <Scene dialogue='' character={Characters.find(c => c.identifier === selectedCharacter)!} />}
     </div>
   );
 }

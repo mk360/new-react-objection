@@ -35,8 +35,6 @@ function Scene(props: SceneProps) {
         dialogueCopy = dialogueCopy.substring(1, dialogueCopy.length);
       });
     }
-
-
   }, [displayedDialogue]);
 
   const usedAnimation = (
@@ -49,6 +47,7 @@ function Scene(props: SceneProps) {
       width: '100%',
       height: '100%',
       position: 'relative',
+      backgroundColor: 'rgba(0,0,0,0.4)'
     }}>
       {!displayScene ? (
         <div style={{
